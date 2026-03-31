@@ -1,6 +1,6 @@
 # 🚀 Screaming Frog Gemini AI: Query Fan-Out Analyzer
 
-Dit script is ontworpen voor gebruik binnen de **Screaming Frog SEO Spider** (Custom JavaScript Column). Het maakt gebruik van de **Gemini 3.1 Flash-Lite API** om webpagina's semantisch te analyseren en te voorspellen hoe Google's AI (Search Generative Experience) een zoekopdracht zou "uitwaaieren" (fan-out) in sub-vragen.
+Dit script is ontworpen voor gebruik binnen de **Screaming Frog SEO Spider** (Custom JavaScript Column). Het maakt gebruik van de **Gemini 3.1 Flash-Lite API** om webpagina's semantisch te analyseren en te voorspellen hoe Google's AI (Search Generative Experience) een zoekopdracht zou gebruiken (fan-out) in sub-vragen.
 
 ## 📖 Wat doet dit script?
 
