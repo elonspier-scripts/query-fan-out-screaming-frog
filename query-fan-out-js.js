@@ -6,7 +6,7 @@
  */
 
 // 1. SETTINGS - Replace with your NEW API Key from AI Studio
-const apiKey = 'AIzaSyBoHiYy_N6mGNZ0hom97FARhfveEovg0YM'; 
+const apiKey = 'API_KEY'; 
 const modelId = 'gemini-3.1-flash-lite-preview';
 
 // 2. Extract semantic chunks from page (Your Original Layout-Aware Logic)
