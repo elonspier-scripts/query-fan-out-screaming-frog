@@ -109,9 +109,28 @@ Gebruik de voorspelde fan-out queries om:
 
 ## ⚙️ Geavanceerde Instellingen (generationConfig)
 
-Het wordt **geadviseerd om de huidige settings zo te houden** voor een optimale balans tussen nauwkeurigheid en bruikbaarheid:
+**Temperature aanpassen voor andere resultaten**
 
 * **Temperature (0.1 - 0.3):** Houd dit laag voor feitelijke, consistente SEO-audits.
+* **Temperature (0.5 - 0.7):** Meer creatief en divers.
+* Test voor de gewenste resultaten
+
+### 🛠️ Custom Extraction & Chunking
+
+Je kunt de nauwkeurigheid van de AI-analyse verhogen door alleen specifieke HTML-elementen te extraheren en deze als 'chunks' aan te bieden. Dit voorkomt dat menu-items of footers de resultaten vervuilen.
+
+#### Handmatig selectors toevoegen
+Pas het script aan om aangepaste selectors van jouw sitestructuur te targeten:
+
+```javascript
+// Voorbeeld: Extraheer specifiek FAQ-secties of Schema.org FAQ-onderdelen
+const faqs = document.querySelectorAll('.faq-item, [itemtype*="FAQPage"]');
+
+// Voeg deze toe aan de extractie-loop van het script
+```
+
+Het wordt **geadviseerd om de huidige Top-K en Top-P settings zo te houden** voor een optimale balans tussen nauwkeurigheid en bruikbaarheid:
+  
 * **Top-K (20-40):** Beperkt de woordkeuze voor scherpere resultaten.
 * **Top-P (0.9 - 0.95):** Balans tussen logica en variatie (Nucleus Sampling).
 
