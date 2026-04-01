@@ -22,6 +22,8 @@ function extractSemanticChunks() {
       content: `${title} ${h1}`.trim()
     });
   }
+
+  // ADD CUSTOM SELECTORS HERE (e.g., const custom = document.querySelectorAll('.your-class');)
   
   // Extract headings and their content
   const headings = document.querySelectorAll('h2, h3');
@@ -132,7 +134,7 @@ AANBEVELINGEN: [Specifieke gaten in de content om te vullen]`;
             temperature: 0.3,
             maxOutputTokens: 2048
           }
-        })
+        } )
       });
 
       // If overloaded (503) or rate-limited (429), wait and retry
