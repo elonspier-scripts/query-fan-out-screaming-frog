@@ -131,8 +131,10 @@ AANBEVELINGEN: [Specifieke gaten in de content om te vullen]`;
         body: JSON.stringify({
           contents: [{ parts: [{ text: prompt }] }],
           generationConfig: {
-            temperature: 0.3,
-            maxOutputTokens: 2048
+          temperature: 0.3,    
+          topP: 0.90,        
+          topK: 20,          
+          maxOutputTokens: 2048
           }
         } )
       });
