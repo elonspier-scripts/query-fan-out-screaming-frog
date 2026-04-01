@@ -152,9 +152,9 @@ AANBEVELINGEN: [Specifieke gaten in de content om te vullen]`;
         let aiResult = responseData.candidates[0].content.parts[0].text;
         
         // Final Output Formatting
-        let finalOutput = '=== GOOGLE AI MODE QUERY FAN-OUT ANALYSIS ===\n\n';
+        let finalOutput = '### GOOGLE AI MODE QUERY FAN-OUT ANALYSIS ###\n\n';
         finalOutput += aiResult;
-        finalOutput += '\n\n=== CONTENT CHUNKING SUMMARY ===\n';
+        finalOutput += '\n\n### CONTENT CHUNKING SUMMARY ###\n';
         finalOutput += `• Primary Topic Chunks: ${chunks.filter(c => c.type === 'primary_topic').length}\n`;
         finalOutput += `• Section Chunks: ${chunks.filter(c => c.type === 'section').length}\n`;
         finalOutput += `• List/FAQ Chunks: ${chunks.filter(c => c.type === 'list').length}\n`;
